@@ -26,13 +26,14 @@ int main() {
         floatNumber = std::stof(stringNumber);
         if (intNumber < 0) {
             std::cout << "This is not a positive integer.";
-        }
-        if (floatNumber != intNumber) {
-            std::cout << "Invalid Integer";
         } else {
-            for (int loopCounter = 0; loopCounter <= intNumber; loopCounter++) {
-                answer = loopCounter * loopCounter;
-                std::cout << loopCounter << "² = " << answer << std::endl;
+            if (floatNumber != intNumber) {
+                std::cout << "Invalid Integer";
+            } else {
+                for (int loopCounter = 0; loopCounter <= intNumber; loopCounter++) {
+                    answer = loopCounter * loopCounter;
+                    std::cout << loopCounter << "² = " << answer << std::endl;
+                }
             }
         }
     } catch (std::invalid_argument) {
