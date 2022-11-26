@@ -30,7 +30,8 @@ int main() {
             if (floatNumber != intNumber) {
                 std::cout << "Invalid Integer";
             } else {
-                for (int loopCounter = 0; loopCounter <= intNumber; loopCounter++) {
+                for (int loopCounter = 0; loopCounter <= intNumber;
+                loopCounter++) {
                     answer = loopCounter * loopCounter;
                     std::cout << loopCounter << "² = " << answer << std::endl;
                 }
